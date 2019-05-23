@@ -104,9 +104,9 @@ function jump() {
         wfxr::pathmarks-fzf --query="$*" -1|
         sed 's#.*->  ##')
     if [[ -d "$target" ]]; then
-        cd "$target" && zle reset-prompt
+        cd "$target" && zle -N reset-prompt
     else
-        zle redisplay # Just redisplay if no jump to do
+        zle -N redisplay # Just redisplay if no jump to do
     fi
 }
 
