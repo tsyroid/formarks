@@ -5,7 +5,8 @@
 #  Created: 2018-04-15 10:24
 #===============================================================================
 
-export PATHMARKS_FILE="$HOME/.pathmarks" && touch "$PATHMARKS_FILE"
+# export PATHMARKS_FILE="$HOME/.pathmarks" && touch "$PATHMARKS_FILE"
+# Move PATHMARKS_FILE to zsh/config/exports.zsh for system consistency
 
 wfxr::pathmarks-fzf() {
     local list
